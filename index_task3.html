@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="style_task3.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Centered Heading -->
+        <h1 class="main-heading">To-Do List Web App</h1>
+    
+        <!-- Flexbox for input and tasks below the heading -->
+        <div class="flex-container">
+            <!-- Box 1: Task input form -->
+            <div class="box input-box">
+                <h2>Add a New Task</h2>
+                <div class="task-input">
+                    <form id="taskForm">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" placeholder="Enter task title" required><br>
+    
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" placeholder="Enter task description" required></textarea><br>
+    
+                        <button type="submit" class="addBtn">Add Task</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Box 2: Task list display -->
+            <div class="box task-box">
+                <h2>My Tasks</h2>
+                <div class="task-list">
+                    <ul id="tasksContainer">
+                        <!-- Predefined task items -->
+                        <li><strong>Project:</strong> Work on project, deadlines are soon! <button class="deleteBtn">X</button></li>
+                        <li><strong>Music:</strong> Practice, Record, Post!!! <button class="deleteBtn">X</button></li>
+                        <li><strong>Shopping:</strong> Buy groceries and clothes <button class="deleteBtn">X</button></li>
+                        <li><strong>Family Time:</strong> Movie night with family <button class="deleteBtn">X</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="app_task3.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
